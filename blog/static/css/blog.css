@@ -1,0 +1,107 @@
+* {
+    padding:0;
+}
+
+html {
+    width:100%;
+}
+
+body {
+    width:100%;
+}
+
+.page-header {
+    margin-top: 0px;
+    padding: 40px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+.date {
+    float: right;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #428bca;
+     font-size: 20pt;
+}
+
+.post p {
+    font-size:1.1em;
+}
+
+/* Base colours for the whole site. */
+
+.dark-primary-color { 
+    background: #1976D2; 
+}
+
+.dark-primary-color a {
+    color: #FFFFFF;
+}
+
+.dark-secondary-color {
+    background-color:#F1F1F1;
+}
+
+.default-primary-color { 
+    background: #2196F3; 
+}
+
+.light-primary-color { 
+    background: #BBDEFB; 
+}
+
+.text-primary-color { 
+    color: #FFFFFF; 
+}
+
+.accent-color { 
+    background: #FF5722; 
+}
+
+.primary-text-color { 
+    color: #452111; 
+}
+
+.secondary-text-color { 
+    color: #727272; 
+}
+
+.divider-color { 
+    border-color: #B6B6B6; 
+}
+
+.navbar-brand {
+    font-size:36pt;
+    padding-right:50px;
+}
+
+.navbar-nav {
+    font-size: 13pt;
+}

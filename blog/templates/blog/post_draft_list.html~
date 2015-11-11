@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <p class="date">created: {{ post.created_date|date:"d-m-Y" }}</p>
+            <h1><a href="{% url "blog.views.post_detail" pk=post.pk %}">{{ post.title }}</a></h1>
+            <p>{{ post.text|truncatechars:200 }}</p>
+        </div>
+    {% empty %}
+        {% if user.is_authenticated %}
+            <h2>There are no posts currently awaiting publishing, add one <a href="{% url 'post_new' %}">here!</a></h2>
+        {% endif %}    
+    {% endfor %}
+{% endblock %}
