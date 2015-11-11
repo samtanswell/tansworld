@@ -27,11 +27,12 @@
                                      <ul class="dropdown-menu">
                                          <li><a href="{% url 'about_page' %}">About</a></li>
                                          <li role="presentation" class="divider"></li>
+                                         <li><p>Administration:</p></li>
                                          <li>
                                              {% if user.is_authenticated %}
                                                  <a href="{% url 'post_new' %}">Add a post</a>
                                              {% else  %}
-                                                 <a href="#">Please Log In!</a>
+                                                 <a href="{% url 'login_page' %}">Please Log In!</a>
                                              {% endif %}
                                          </li> 
                                          <li>
