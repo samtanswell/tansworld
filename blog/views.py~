@@ -67,3 +67,6 @@ def about_page(request):
 
 def teamspeak(request):
     return render(request, 'blog/teamspeak.html')
+
+def login_page(request):
+    return render(request, 'blog/login_page.html')

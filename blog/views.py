@@ -70,3 +70,4 @@ def teamspeak(request):
 
 def login_page(request):
     return render(request, 'blog/login_page.html')
+
