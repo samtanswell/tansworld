@@ -14,7 +14,7 @@
                   <div class="container-fluid">
                        <div class="navbar-header">
                             <a class="navbar-brand" href="http://tansworld.co.uk">Tansworld</a>
-y                       <div>
+                       <div>
                             <ul class="nav navbar-nav">
                                  <li class="active"><a href="{% url 'post_list' %}"><p>Home</p></a></li>
                                  <li><a href="{% url 'gallery' %}"><p>Gallery</p></a></li>
@@ -40,13 +40,13 @@ y                       <div>
                                              {% endif %}
                                          </li>
                                     </ul>
+                                <li style="padding-left:100px;"><p>Please <a href="#">Log In</a> or <a href="#">Register</a></p></li>
                                 </li>
                             </ul>
                        </div>
                   </div>
              </nav>
-             <p>Please <a href="#">Log In</a> or <a href="#">Register</a></p>
-     </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
