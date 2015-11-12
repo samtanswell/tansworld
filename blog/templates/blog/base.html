@@ -42,7 +42,11 @@
                                          </li>
                                     </ul>
                                  </li>
-                                 <li class="float-right"><a href="#">Log In or Register</a></li>
+                                 {% if user.is_authenticated %}
+                                     <li class="float-right">Welcome: <a href="#">{% user.name %}</a></li>
+                                 {% else %}
+                                     <li class="float-right"><a href="#">Log In or Register</a></li>
+                                 {% endif %}
                             </ul>
                        </div>
                   </div>
