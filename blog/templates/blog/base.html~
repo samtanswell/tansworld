@@ -36,7 +36,7 @@
                                          </ul>
                                      </li>                                                                 
                                  {% else %}
-                                     <li><a href="{% url 'login_page' %}">Log In or Register</a></li>
+                                     <li><a href="{% url 'login_page' %}">Please log in</a></li>
                                  {% endif %}
                             </ul>
                        </div>
@@ -50,9 +50,8 @@
                     {% endblock %}
                 </div>
                 <div class="col-md-4">
-                    <div>
-                        {% block tags %}
-                        {% endblock %}
+                    <div style="background: #f1f1f1;">
+                        <p>.</p>
                     </div>
                 </div>
             </div>
