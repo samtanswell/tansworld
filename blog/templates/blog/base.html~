@@ -22,20 +22,19 @@
                                  <li><a href="{% url 'teamspeak' %}"><p>Teamspeak</p></a></li>
                                  <li><a href="{% url 'blmra' %}"><p>BLMRA</p></a></li>
                                  <li><a href="{% url 'about_page' %}">About</a></li>
-                                 <li class="dropdown">
-                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Welcome, {{user.get_username}}
-                                     <span class="caret"></span></a>
-                                     <ul class="dropdown-menu">
-                                         <li role="presentation" class="divider"></li>
-                                         <li>
-                                             <a href="{% url 'post_new' %}">Add a post</a>
-                                         <li>
-                                             <a href="{% url "post_draft_list" %}">View Unpublished Posts</a>
-                                         </li>
-                                    </ul>
-                                 </li>
                                  {% if user.is_authenticated %}
-                                     <li><a href="#">Welcome, {{user.get_username}}</a></li>
+                                     <li class="dropdown">
+                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Welcome, {{user.get_username}}
+                                         <span class="caret"></span></a>
+                                         <ul class="dropdown-menu">
+                                             <li role="presentation" class="divider"></li>
+                                             <li>
+                                                 <a href="{% url 'post_new' %}">Add a post</a>
+                                             <li>
+                                                 <a href="{% url "post_draft_list" %}">View Unpublished Posts</a>
+                                             </li>
+                                         </ul>
+                                     </li>                                                                 
                                  {% else %}
                                      <li><a href="{% url 'login_page' %}">Log In or Register</a></li>
                                  {% endif %}
