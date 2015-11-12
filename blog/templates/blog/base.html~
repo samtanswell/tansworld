@@ -27,12 +27,11 @@
                                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{user.get_username}}
                                          <span class="caret"></span></a>
                                          <ul class="dropdown-menu">
+                                             <li><a href="{% url 'post_new' %}">Add a post</a></li>
+                                             <li><a href="{% url "post_draft_list" %}">View Unpublished Posts</a></li>
+                                             <li><a href="#">Manage Account</a></li>
                                              <li role="presentation" class="divider"></li>
-                                             <li>
-                                                 <a href="{% url 'post_new' %}">Add a post</a>
-                                             <li>
-                                                 <a href="{% url "post_draft_list" %}">View Unpublished Posts</a>
-                                             </li>
+                                             <li><a href="#">Log Out</a></li>
                                          </ul>
                                      </li>                                                                 
                                  {% else %}
