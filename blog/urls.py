@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^blmra/$', views.blmra, name='blmra'),
     url(r'^teamspeak/$', views.teamspeak, name='teamspeak'),
     url(r'^about/$', views.about_page, name='about_page'),
+    url(r'^login/$', views.login_page, name='login_page'),
 ]

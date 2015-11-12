@@ -60,10 +60,10 @@ def gallery(request):
     return render(request, 'blog/gallery.html')
 
 def blmra(request):
-    return redirect('blog.views.blmra')
+    return render(request, 'blog/blmra.html')
 
 def about_page(request):
-    return redirect('blog.views.about_page')
+    return render(request, 'blog/about_page.html')
 
 def teamspeak(request):
-    return redirect('blog.views.teamspeak')
+    return render(request, 'blog/teamspeak.html')
