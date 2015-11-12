@@ -45,6 +45,7 @@ y                       <div>
                        </div>
                   </div>
              </nav>
+             <p>Please <a href="#">Log In</a> or <a href="#">Register</a></p>
      </div>
         <div class="container">
             <div class="row">
