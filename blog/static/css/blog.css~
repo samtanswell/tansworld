@@ -51,6 +51,10 @@ body {
     font-size:18pt;
 }
 
+.overridetogrey {
+    color: #454545;
+}
+
 .post h1 a, .post h1 a:visited {
     color: #428bca;
     font-size: 20pt;
