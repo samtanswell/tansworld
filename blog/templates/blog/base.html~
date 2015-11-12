@@ -50,8 +50,9 @@
                     {% endblock %}
                 </div>
                 <div class="col-md-4">
-                    <div style="background: #f1f1f1;">
-                        <p>.</p>
+                    <div class="post">
+                        <h3>Sidebar Content</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia massa eu posuere condimentum. Cras quis feugiat odio, eget lobortis erat. Proin aliquet sagittis quam, eget efficitur orci semper vel. Cras euismod odio ut vulputate elementum. Duis a urna in dui laoreet maximus. Sed venenatis tincidunt sem, a auctor est aliquet eu. Cras quis convallis tortor. Suspendisse euismod et massa vel suscipit. Fusce iaculis dolor quis risus sagittis tempus. Sed tempus nulla eu tellus ornare.</p>
                     </div>
                 </div>
             </div>

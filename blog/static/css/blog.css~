@@ -47,7 +47,7 @@ body {
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #47A3FF;
+    color: #428bca;
      font-size: 20pt;
 }
 
@@ -104,4 +104,8 @@ body {
 
 .navbar-nav {
     font-size: 13pt;
+}
+
+.float-right {
+    float:right;
 }
