@@ -46,9 +46,18 @@ body {
     margin-bottom: 70px;
 }
 
+.post h3 {
+    color: #428bca;
+    font-size:18pt;
+}
+
+.overridetogrey {
+    color: #C4C4C4;
+}
+
 .post h1 a, .post h1 a:visited {
     color: #428bca;
-     font-size: 20pt;
+    font-size: 20pt;
 }
 
 .post p {
@@ -104,4 +113,8 @@ body {
 
 .navbar-nav {
     font-size: 13pt;
+}
+
+.float-right {
+    float:right;
 }
