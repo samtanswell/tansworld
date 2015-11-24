@@ -52,7 +52,7 @@ body {
 }
 
 .overridetogrey {
-    color: #FF0000;
+    color: #C4C4C4;
 }
 
 .post h1 a, .post h1 a:visited {
