@@ -9,39 +9,20 @@
             <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-       <div class="page-header dark-secondary-color">
-            <nav class="navbar navbar-inverted">
-                  <div class="container-fluid">
-                       <div class="navbar-header">
-                            <a class="navbar-brand" href="http://tansworld.co.uk">Tansworld</a>
-                       </div>
-                       <div>
-                            <ul class="nav navbar-nav">
-                                 <li class="active"><a href="{% url 'post_list' %}"><p>Home</p></a></li>
-                                 <li><a href="{% url 'gallery' %}"><p>Gallery</p></a></li>
-                                 <li><a href="{% url 'teamspeak' %}"><p>Teamspeak</p></a></li>
-                                 <li><a href="{% url 'blmra' %}"><p>BLMRA</p></a></li>
-                                 <li><a href="{% url 'about_page' %}">About</a></li>
-                                 {% if user.is_authenticated %}
-                                     <li class="dropdown">
-                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{user.get_username}}
-                                         <span class="caret"></span></a>
-                                         <ul class="dropdown-menu">
-                                             <li><a href="{% url 'post_new' %}">Add a post</a></li>
-                                             <li><a href="{% url "post_draft_list" %}">View Unpublished Posts</a></li>
-                                             <li><a href="#">Manage Account</a></li>
-                                             <li role="presentation" class="divider"></li>
-                                             <li><a href="{% url 'login_page' %}">Log Out</a></li>
-                                         </ul>
-                                     </li>                                                                 
-                                 {% else %}
-                                     <li><a href="{% url 'login_page' %}">Log In</a></li>
-                                 {% endif %}
-                            </ul>
-                       </div>
-                  </div>
-             </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p>navbar</p>
+                </div>
+                <div class="col-md-2">
+                    <p>padding</p>
+                </div>
+                <div class="col-md-2">
+                    <p>Button</p>
+                </div>
+            </div>
         </div>
+        
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -49,10 +30,7 @@
                     {% endblock %}
                 </div>
                 <div class="col-md-4">
-                    <div class="post">
-                        <h3>Sidebar Content</h3>
-                        <p class="overridetogrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia massa eu posuere condimentum. Cras quis feugiat odio, eget lobortis erat. Proin aliquet sagittis quam, eget efficitur orci semper vel. Cras euismod odio ut vulputate elementum. Duis a urna in dui laoreet maximus. Sed venenatis tincidunt sem, a auctor est aliquet eu. Cras quis convallis tortor. Suspendisse euismod et massa vel suscipit. Fusce iaculis dolor quis risus sagittis tempus. Sed tempus nulla eu tellus ornare.</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
