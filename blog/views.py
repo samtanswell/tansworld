@@ -1,13 +1,10 @@
 from django.http import *
 from django.template import RequestContext
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, render_to_response, redirect
 from django.utils import timezone
 from .models import Post
-from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
-from django.shortcuts import render_to_response,redirect
 from django.contrib.auth import authenticate, login, logout
-
 
 # Create your views here.
 
@@ -25,7 +22,7 @@ def post_new(request):
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
-            post.published_date = timezone.now()
+            #post.published_date = timezone.now()
             post.save()
             return redirect('blog.views.post_detail', pk=post.pk)
     else:
@@ -85,3 +82,6 @@ def login_page(request):
                 login(request, user)
                 return HttpResponseRedirect('/')
     return render_to_response('blog/login_page.html', context_instance=RequestContext(request))
+
+
+

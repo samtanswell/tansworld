@@ -31,11 +31,11 @@
                                              <li><a href="{% url "post_draft_list" %}">View Unpublished Posts</a></li>
                                              <li><a href="#">Manage Account</a></li>
                                              <li role="presentation" class="divider"></li>
-                                             <li><a href="{% url 'blog/login_page.html' %}">Log Out</a></li>
+                                             <li><a href="{% url 'login_page' %}">Log Out</a></li>
                                          </ul>
                                      </li>                                                                 
                                  {% else %}
-                                     <li><a href="{% url 'login_page' %}">Please log in</a></li>
+                                     <li><a href="{% url 'login_page' %}">Log In</a></li>
                                  {% endif %}
                             </ul>
                        </div>
@@ -49,10 +49,14 @@
                     {% endblock %}
                 </div>
                 <div class="col-md-4">
+                    {% if views.sidebar %}
                     <div class="post">
                         <h3>Sidebar Content</h3>
                         <p class="overridetogrey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia massa eu posuere condimentum. Cras quis feugiat odio, eget lobortis erat. Proin aliquet sagittis quam, eget efficitur orci semper vel. Cras euismod odio ut vulputate elementum. Duis a urna in dui laoreet maximus. Sed venenatis tincidunt sem, a auctor est aliquet eu. Cras quis convallis tortor. Suspendisse euismod et massa vel suscipit. Fusce iaculis dolor quis risus sagittis tempus. Sed tempus nulla eu tellus ornare.</p>
                     </div>
+                    {% else %}
+                        {{sidebar}}
+                    {% endif %}
                 </div>
             </div>
         </div>
