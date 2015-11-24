@@ -31,42 +31,25 @@
                                     <!-- Collect the nav links, forms, and other content for toggling -->
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                         <ul class="nav navbar-nav">
-                                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                                            <li><a href="#">Link</a></li>
-                                            <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">Action</a></li>
-                                                    <li><a href="#">Another action</a></li>
-                                                    <li><a href="#">Something else here</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">Separated link</a></li>
-                                                    <li role="separator" class="divider"></li>
-                                                    <li><a href="#">One more separated link</a></li>
-                                                </ul>
-                                            </li>
+                                            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">Teamspeak</a></li>
+                                            <li><a href="#">Gallery</a></li>
                                         </ul>
                                         <ul class="nav navbar-nav navbar-right">
                                         {% if user.is_authenticated %}
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-danger">{{ user.get_username }}</button>
-                                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <span class="caret"></span>
-                                                    <span class="sr-only">Toggle Dropdown</span>
-                                                </button>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{user.get_username}} <span class="caret"></span></a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a href="{% url 'post_new' %}">Add Post</a></li>
-                                                    <li><a href="{% url 'post_draft_list' %}">View Unpublished Posts</a></li>
+                                                    <li><a href="#">Add post</a></li>
+                                                    <li><a href="#">View unpublished posts</a></li>
                                                     <li><a href="#">Manage Account</a></li>
                                                     <li role="separator" class="divider"></li>
-                                                    <li><a href="{% url 'login_page' %}">Log Out</a></li>
+                                                    <li><a href="{% url 'login_page' %}">Log out</a></li>
                                                 </ul>
-                                            </div>
+                                            </li>
                                         {% else %}
-                                            <div class="btn-group" role="group" aria-label="...">
-                                                <button type="button" class="btn btn-default"><a href="{% url 'login_page' %}">Login</a></button>
-                                                <button type="button" class="btn btn-default"><a href="#">Register</a></button>
-                                            </div>
+                                            <li><a href="{% url 'login_page' %}">Login</a></li>
+                                            <li><a href="#">Register</a></li>
                                         {% endif %}
                                         </ul>
                                     </div><!-- /.navbar-collapse -->
